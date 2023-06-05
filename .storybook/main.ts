@@ -16,7 +16,7 @@ const config: StorybookConfig = {
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
       config.base = '/Estudos-Ignite-Lab/'
-    }
+    } 
 
     return config
   }
