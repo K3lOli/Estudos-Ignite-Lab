@@ -13,5 +13,12 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/Estudos-Ignite-Lab/'
+    }
+
+    return config
+  }
 };
 export default config;

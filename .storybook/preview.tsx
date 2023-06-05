@@ -12,11 +12,6 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
-    viteFinal: (config, { configType }) => {
-      if (configType === 'PRODUCTION') {
-        config.base = '/Estudos-Ignite-Lab/'
-      }
-    },
   },
 };
 
